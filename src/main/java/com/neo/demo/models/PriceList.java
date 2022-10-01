@@ -23,7 +23,7 @@ public class PriceList {
 
     @JsonIgnoreProperties({"hibernateLazyInitializer", "handler"})
     @ManyToOne(cascade = CascadeType.ALL)
-    @JoinColumn(name = "vehicle_model_id")
+    @JoinColumn(name = "model_id")
     private VehicleModel vehicleModel;
 
     @JsonIgnoreProperties({"hibernateLazyInitializer", "handler"})
