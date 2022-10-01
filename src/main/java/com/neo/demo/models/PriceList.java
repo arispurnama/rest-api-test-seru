@@ -2,12 +2,14 @@ package com.neo.demo.models;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
 import java.util.List;
 
 @Data
 @Entity
+@NoArgsConstructor
 public class PriceList {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -20,8 +22,8 @@ public class PriceList {
     private Integer price;
 
     @JsonIgnoreProperties({"hibernateLazyInitializer", "handler"})
-    @ManyToOne(fetch = FetchType.LAZY, cascade = CascadeType.ALL)
-    @JoinColumn(name = "model_id")
+    @ManyToOne(cascade = CascadeType.ALL)
+    @JoinColumn(name = "vehicle_model_id")
     private VehicleModel vehicleModel;
 
     @JsonIgnoreProperties({"hibernateLazyInitializer", "handler"})

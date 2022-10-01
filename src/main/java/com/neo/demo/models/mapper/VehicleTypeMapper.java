@@ -11,9 +11,11 @@ import java.util.List;
 public interface VehicleTypeMapper {
     VehicleTypeMapper INSTANCE = Mappers.getMapper(VehicleTypeMapper.class);
 
-    VehicleType toEntitiy(VehicleTypeDto e);
+    VehicleType toEntity(VehicleTypeDto e);
 
     VehicleTypeDto toDto(VehicleType e);
+
+    List<VehicleType> toEntityList(List<VehicleTypeDto> e);
 
     List<VehicleTypeDto> toDtoList(List<VehicleType> e);
 }

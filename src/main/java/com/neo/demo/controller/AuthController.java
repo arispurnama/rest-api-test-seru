@@ -25,7 +25,7 @@ public class AuthController {
         return new Response(data, data != null ? "Login Sukses" : "Login Gagal", HttpStatus.OK);
     }
 
-    @PostMapping("/do_register")
+    @PostMapping("/do-register")
     public Response doRegister(@RequestBody RegistrationDto registrationDto){
         RegistrationDto data = userService.doRegister(registrationDto);
 

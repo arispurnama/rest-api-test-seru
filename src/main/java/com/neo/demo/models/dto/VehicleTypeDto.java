@@ -14,6 +14,5 @@ public class VehicleTypeDto {
     private Integer id;
     private String nameType;
     private Integer capacity;
-    private List<VehicleBrand> brands;
-    private VehicleModel vehicleModel;
+    private VehicleBrandDto vehicleBrand;
 }

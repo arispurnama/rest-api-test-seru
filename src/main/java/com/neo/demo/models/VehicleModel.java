@@ -1,13 +1,17 @@
 package com.neo.demo.models;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
 import java.util.List;
 
 @Data
 @Entity
+@NoArgsConstructor
+@AllArgsConstructor
 public class VehicleModel {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -23,5 +27,5 @@ public class VehicleModel {
 
     @Transient
     @OneToMany(mappedBy = "vehicleModel")
-    private List<VehicleModel> vehicleModelList;
+    private List<PriceList> priceListList;
 }
