@@ -1,0 +1,13 @@
+Catatan :
+Untuk menjalankankan Resp Api bisa menggunakan Collection ataupun Swagger-Ui
+Jika Menggunakan Swagger - UI : http://localhost:8081/swagger-ui/index.html#/
+Jika Menggunakan Collection ada di Github
+
+Yang sudah register:
+
+Untuk User :
+Username : Aris
+Password : 1234
+
+
+Untuk Folder User yang dicollection itu tidak digunakan.
